@@ -15,10 +15,6 @@ body {
     width: 100%;
 }
 
-.nombre {
-    width: 50%;
-}
-
 .tb-nav {
     width: 100%;
 }
@@ -27,23 +23,35 @@ body {
 .navbar a {
     color: white;
     text-align: right;
+    text-decoration: none;
 }
 
 .nav-logo {
     padding-left: 100px;
+    
 }
 
 .nav-links {
     text-align: right;
     padding-right: 100px;
+    
 }
 
 .td-text{
-    padding-right: 100px;
+    padding-right: 15%;
 }
 
 .quien {
     margin: 0 15px;
+}
+
+.perfil {
+    width: 350px;
+    height: 350px;
+}
+
+.img-perfil{
+    text-align: right;
 }
 
 .btn-leer {
@@ -52,10 +60,26 @@ body {
     text-decoration: none;
     border-radius: 5px;
     background: black;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 auto;
     width: 80px;
-    margin-left: 32%;
+}
+
+.btn-leer-py {
+
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: black;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    justify-content: center;
+    width: 80px;
+}
+
+
+h1,h3{
+    margin: 10px;
 }
 
 .section-quiensoy-table {
@@ -64,16 +88,17 @@ body {
     margin: 0 auto;
 }
 
-.perfil {
-    padding-left: 250px;
-    width: 350px;
-    height: 350px;
-}
+
 
 .seccion {
     padding: 10px 100px 10px 100px;
     text-align: center;
 
+}
+.foto-perfil {
+    width: 150px;
+    border-radius: 100px;
+    border: 5px solid white;
 }
 
 .gris {
@@ -81,11 +106,7 @@ body {
     color: white;
 }
 
-.foto-perfil {
-    width: 150px;
-    border-radius: 100px;
-    border: 5px solid white;
-}
+
 
 
 .tabla-proyectos {
@@ -106,15 +127,19 @@ body {
 
 .tarjeta {
     /* border:  2px solid #000; */
-    padding: 5px;
+    
     padding-bottom: 20px;
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
     ;
-
-
-
 }
 
+.info-txt{
+    padding: 15px;
+}
+
+.btn-py{
+    text-align: center;
+}
 
 .tabla-proyectos td:first-child {
     padding-left: 0;
