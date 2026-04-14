@@ -30,12 +30,16 @@ body {
 }
 
 .nav-logo {
-    padding-left: 25px;
+    padding-left: 100px;
 }
 
 .nav-links {
     text-align: right;
-    padding-right: 40px;
+    padding-right: 100px;
+}
+
+.td-text{
+    padding-right: 100px;
 }
 
 .quien {
@@ -51,7 +55,7 @@ body {
     color: white;
     margin: 0 auto;
     width: 80px;
-    margin-left: 35%;
+    margin-left: 32%;
 }
 
 .section-quiensoy-table {
@@ -67,7 +71,7 @@ body {
 }
 
 .seccion {
-    padding: 10px 40px 10px 20px;
+    padding: 10px 100px 10px 100px;
     text-align: center;
 
 }
@@ -136,7 +140,8 @@ body {
 .footer {
     background: #333;
     color: white;
-    padding: 20px 40px 20px 20px;
+    text-align: center;
+    padding: 20px 100px 20px 20px;
 
     margin-top: 50px;
     text-align: right;
