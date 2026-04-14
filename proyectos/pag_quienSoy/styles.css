@@ -137,6 +137,8 @@ body {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
+
     margin-top: 50px;
+    text-align: right;
 }
