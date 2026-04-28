@@ -1,6 +1,5 @@
 
 
-
 /* en essta parte manejo el general de la factura y el border para saber los limites que tiene cada caja*/
 * {
     /* border: 1px solid blue; */
@@ -207,6 +206,7 @@ td {
 
     #empresa {
         padding: 20px 40px 10px 40px;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -217,6 +217,7 @@ td {
 
     .datos-empresa {
         padding: 10px 40px;
+        flex-wrap: wrap;
         gap: 15px;
     }
 
@@ -286,11 +287,6 @@ td {
             width: 28%;
         }
 
-        .datos-empresa {
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
         #empresa {
             display: flex;
             align-content: space-around;
@@ -315,7 +311,7 @@ td {
         .info-txt {
             width: 100%;
             margin-bottom: 20%;
+            ;
         }
-
     }
 }
