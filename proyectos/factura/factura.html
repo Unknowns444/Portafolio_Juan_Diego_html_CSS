@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Factura</title>
+</head>
+;
+<body>
+
+    <!-- el cuerpo de la pag -->
+    <div class="padre">
+        <header>
+            <div id="empresa">
+                <div class="logo"><img src="./img/WhatsApp_Image_2026-03-27_at_10.15.51_AM-removebg-preview.png"
+                        alt="logo-JD">
+                </div>
+                <div class="marca-texto">
+                    <span class="nombre-marca">Motivos Soft</span>
+                    <span class="subtitulo-marca">la mejor tienda digital</span>
+                </div>
+                <div>
+
+                    <!-- titulo en rojo -->
+                    <h1>FACTURA</h1>
+                </div>
+
+
+            </div>
+
+            <!-- datos de la empresa y fecha de creaccion de la factura -->
+            <div class="datos-empresa">
+                <div class="info-empresa">
+                    <h3 class="para-txt">Factura para:</h2>
+                        <h4> Motivos Soft </h4>
+                        <p>Oficina 304 E. Andes,</p>
+                        <p>Bucaramanga,</p>
+                        <p>Santander.</p>
+                </div>
+                <div class="info-fechas">
+                    <div>
+                        <h4 class="fac-txt">Factura # </h4>
+                        <p>fecha</p>
+                    </div>
+                    <div>
+                        <h4> 52148</h4>
+                        <p>01/02/2020</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div>
+
+            <!-- inventario de los item que van integrados en la factura -->
+            <table class="inventario">
+                <thead>
+                    <tr class="productos">
+                        <td class="col"></td>
+                        <td class="empuje"><strong>SL.</strong></td>
+                        <td><strong>Descripcion Producto</strong></td>
+                        <td><strong>Precio</strong></td>
+                        <td><strong>Cantidad</strong></td>
+                        <td><strong>Total</strong></td>
+                        <td class="col"></td>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+
+                    <tr>
+                        <td class="col1"></td>
+                        <td>1</td>
+                        <td>lorem ipsum</td>
+                        <td>$5.000</td>
+                        <td>1</td>
+                        <td>$5.000</td>
+                        <td class="col1"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1"></td>
+                        <td>2</td>
+                        <td>lorem ipsum</td>
+                        <td>$5.000</td>
+                        <td>1</td>
+                        <td>$5.000</td>
+                        <td class="col1"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1"></td>
+                        <td>3</td>
+                        <td>lorem ipsum</td>
+                        <td>$5.000</td>
+                        <td>1</td>
+                        <td>$5.000</td>
+                        <td class="col1"></td>
+                    </tr>
+                    <tr>
+                        <td class="col1"></td>
+                        <td>4</td>
+                        <td>lorem ipsum</td>
+                        <td>$5.000</td>
+                        <td>1</td>
+                        <td>$5.000</td>
+                        <td class="col1"></td>
+                    </tr>
+                    <!-- FILA VACÍA CON MISMO ESPACIO -->
+                    <tr class="fila-vacia">
+                        <td class="col1"></td>
+                        <td class="celda-numero"></td>
+                        <td class="celda-descripcion"></td>
+                        <td class="celda-precio"></td>
+                        <td class="celda-cantidad"></td>
+                        <td class="celda-total">
+                        <td class="col1"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- datos inferiores de la factura donde van la informacion de los cobros -->
+            <div class="factura">
+                <div class="izquierda">
+                    <p class="p-info"><strong>Gracias por tu compra</strong></p>
+
+                    <p class="p-info"><strong>Información de pago</strong></p>
+                    <p class="p-info">Cuenta #: 1234</p>
+                    <p class="p-info">Nombre:Ejemplo</p>
+                    <p class="p-info">Lorem, ipsum dolor sit amet consectetur.</p>
+                </div>
+
+                <div class="derecha">
+                    <div class="resumen-fila">
+                        <span>Sub Total:</span>
+                        <strong>$220.00</strong>
+                    </div>
+                    <div class="resumen-fila">
+                        <span>Tax:</span>
+                        <strong>0.00%</strong>
+                    </div>
+                    <hr>
+                    <div class="resumen-fila total">
+                        <span>Total:</span>
+                        <strong>$220.00</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior">
+                <div class="info-txt">
+                    <h4 class="ti-tyc">Terminos y condiciones</h4>
+                    <p class="tyc">El pago de esta factura deberá realizarse dentro del plazo establecido. En caso de
+                        retraso, se podrán
+                        aplicar intereses por mora según la normativa vigente. Una vez emitida.</p>
+                </div>
+                <div class="firma">
+                    <div class="linea"></div>
+                    <span class="auto">Firma Autorizacion </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+
+</html>
