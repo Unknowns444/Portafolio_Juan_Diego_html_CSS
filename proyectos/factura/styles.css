@@ -18,7 +18,7 @@ body {
 .padre {
     width: 100%;
     max-width: 860px;
-    background: #f7f5f1;
+    background: #ffffff;
     overflow: hidden;
     box-shadow: 0 14px 32px rgba(0, 0, 0, 0.19)
 }
