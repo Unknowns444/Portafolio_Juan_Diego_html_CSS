@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 20px;
+    background: #e9e9e9;
+    color: #222
+}
+
+.padre {
+    width: 100%;
+    max-width: 860px;
+    background: #f7f5f1;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.19)
+}
+
+header {
+    background: #23262d;
+    color: #fff
+}
+
+h1 {
+    font-size: 46px;
+    letter-spacing: 2px;
+    color: #df4269;
+    text-align: right
+}
+
+h2,
+h3,
+h4,
+p {
+    color: #e6eaee
+}
+
+#empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 40px 16px;
+    border-bottom: 4px solid #df4269;
+    gap: 10px
+}
+
+.valores{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain
+}
+
+.marca-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px
+    
+}
+
+.nombre-marca {
+    font-size: 1.15rem;
+    font-weight: 700
+}
+
+.subtitulo-marca {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #c8ccd6
+}
+
+.datos-empresa {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 40px 28px;
+    align-items: flex-start;
+    gap: 10px
+}
+
+.info-empresa {
+    max-width: 58%
+}
+
+.info-empresa h4 {
+    font-size: 14px
+}
+
+.info-empresa p {
+    font-size: 13px;
+    line-height: 1.45
+}
+
+.info-fechas {
+    min-width: 220px;
+    display: flex;
+    gap: 28px;
+    justify-content: flex-end
+}
+
+.info-fechas h4 {
+    font-size: 14px
+}
+
+.info-fechas p {
+    font-size: 13px;
+    line-height: 1.45
+}
+
+table {
+    width: 100%
+}
+
+td {
+    width: 100px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center
+}
+
+.columna {
+
+    padding: 0 5px
+}
+
+.col1 {
+    border-bottom: 1px solid white;
+    padding: 0 12px
+}
+
+.inventario {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-spacing: 0
+}
+
+.inventario td {
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #35363a;
+    border-bottom: 1px solid #d8d4cd
+}
+
+
+.inventario td:nth-child(2) {
+    width: 8%;
+    text-align: center
+}
+
+.inventario td:nth-child(3) {
+    width: 52%;
+    text-align: left;
+}
+
+.inventario td:nth-child(5) {
+    width: 14%;
+    text-align: right
+}
+
+.inventario td:nth-child(4) {
+    width: 12%;
+    text-align: center
+}
+
+.productos {
+    background: #e9e2e2;
+    width: 100%
+}
+
+.fila-vacia {
+    border-bottom: 1px solid #eeeeee
+}
+
+.fila-vacia .celda-numero,
+.fila-vacia .celda-descripcion,
+.fila-vacia .celda-precio,
+.fila-vacia .celda-cantidad,
+.fila-vacia .celda-total {
+    padding: 14px 10px;
+    height: 46px
+}
+
+.para-txt,
+.fac-txt {
+    font-size: 16px;
+    margin-bottom: 6px
+}
+
+.factura {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 40px 24px;
+    align-items: flex-start;
+    gap: 10%
+}
+
+.izquierda {
+    width: 58%
+}
+
+.derecha {
+    width: 23%;
+    text-align: right
+}
+
+.p-info {
+    color: #2d2f36;
+    font-size: 14px;
+    line-height: 1.45
+}
+
+.fuerte {
+    font-weight: 700
+}
+
+.pago {
+    margin-top: 10px
+}
+
+.resumen-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 8px;
+    color: #2d2f36;
+    font-size: 14px
+}
+
+.derecha hr {
+    border: 0;
+    border-top: 1px solid #2d2f36;
+    margin: 10px 0 12px
+}
+
+.total {
+    font-size: 18px
+}
+
+.inferior {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 40px 36px;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%
+}
+
+.info-txt {
+    width: 62%
+}
+
+.ti-tyc {
+    padding-top: 10px;
+    margin-bottom: 8px;
+    border-top: 1px solid #222;
+    color: #2d2f36;
+    font-size: 15px;
+    width: 36%
+}
+
+.tyc {
+    color: #484b52;
+    font-size: 12px;
+    line-height: 1.45
+}
+
+.firma {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    min-width: 180px
+}
+
+.linea {
+    width: 150px;
+    border-bottom: 1px solid #5b5d63
+}
+
+.auto {
+    font-size: 12px;
+    color: #34363b
+}
+
+/* ==========================================================
+   MEDIA QUERIES
+========================================================== */
+
+/* --- Portátil: 1220px o menos --- */
+@media (max-width: 1220px) {
+    .padre {
+        max-width: 90%;
+        margin: 30px auto
+    }
+
+    #empresa {
+        padding: 20px 40px 10px 40px;
+        flex-wrap: wrap
+    }
+
+    .logo {
+        width: 12%;
+        min-width: 70px
+    }
+
+    .datos-empresa {
+        padding: 10px 40px;
+        flex-wrap: wrap;
+        gap: 15px
+    }
+
+    .factura {
+        padding: 20px 40px;
+        flex-wrap: wrap;
+        gap:50px
+    }
+
+    .inferior {
+        padding: 20px 40px;
+        flex-wrap: wrap
+    }
+}
+
+/* --- Tablet: 900px o menos --- */
+@media (max-width: 900px) {
+    .padre {
+        max-width: 95%;
+        margin: 20px auto
+    }
+
+    h1 {
+        text-align: left;
+        font-size: clamp(1.4rem, 4vw, 1.8rem)
+    }
+
+    .logo {
+        width: 20%
+    }
+
+    .inventario {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto
+    }
+
+    .derecha {
+        text-align: left
+    }
+
+    .firma {
+        align-items: flex-start
+    }
+}
+
+/* --- Móvil: 600px o menos --- */
+@media (max-width: 560px) {
+    body {
+        padding: 16px
+    }
+
+    .padre {
+        margin: 10px auto
+    }
+
+    #empresa,
+    .datos-empresa,
+    .factura,
+    .inferior {
+        display: grid;
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .logo {
+        width: 28%
+    }
+
+    .info-empresa,
+    .info-fechas,
+    .izquierda,
+    .derecha,
+    .info-txt {
+        display: grid;
+        width: 100%;
+        gap: 10px;
+        max-width: none;
+        justify-content: center;
+    }
+
+    .info-fechas {
+        gap: 10px
+    }
+
+    h1 {
+        font-size: 34px
+    }
+
+    .para-txt,
+    .fac-txt,
+    .ti-tyc {
+        font-size: 14px
+    }
+
+    .info-empresa p,
+    .info-fechas p,
+    .p-info {
+        font-size: 12px
+    }
+
+    .inventario td {
+        padding: 12px 10px;
+        font-size: 12px
+    }
+
+    .inventario td {
+        padding: 8px 5px;
+        white-space: nowrap
+    }
+
+    .tyc,
+    .auto {
+        font-size: 11px
+    }
+
+    .firma {
+        align-items: flex-start
+    }
+
+    .info-txt {
+        margin-bottom: 20%
+    }
+}
