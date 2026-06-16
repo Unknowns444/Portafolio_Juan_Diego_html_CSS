@@ -1,5 +1,4 @@
 *{
-    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -13,7 +12,9 @@
     color: #292930;
 }
 
-/* ENCABEZADO */
+/* =====================
+   ENCABEZADO
+   ===================== */
 .encabezado-principal {
     border-bottom: 1px solid #f0f0f0;
     width: 100%;
@@ -21,8 +22,9 @@
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    
+    flex-wrap: wrap;
 }
+
 #divisa,
 #idioma{
     padding: 10px;
@@ -30,22 +32,24 @@
 
 #unete,
 #inicio-sesion{
-    padding-top:30px;
+    padding-top: 30px;
 }
 
 .nav-superior{
-    padding: 1px 6.5% ;
-    display: flex;
-    justify-content: space-around;
-    background: #2B2C30;
+    padding: 1px 6.5%;
     display: flex;
     justify-content: space-between;
-    height: 2.5%;
+    background: #2B2C30;
+    height: auto;
+    min-height: 2.5%;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .main-nav{
-       height: 70px;
-       background-color: rgb(255, 255, 255);
+    height: auto;
+    min-height: 70px;
+    background-color: rgb(255, 255, 255);
 }
 
 .contenido-main{
@@ -60,22 +64,23 @@
 .contenedor-encabezado {
     max-width: 1400px;
     width: 100%;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 20px;
 }
 
 .logotipo {
     position: relative;
     font-size: 24px;
     font-weight: bold;
-    
 }
 
 .logotipo h1{
     padding-left: 35%;
-color: #0662fe;
+    color: #0662fe;
 }
 
 .logo{
@@ -86,6 +91,9 @@ color: #0662fe;
 
 .enlaces-navegacion{
     padding-top: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
 }
 
 .enlaces-navegacion a {
@@ -100,12 +108,13 @@ color: #0662fe;
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .container-secuandario{
     position: relative;
     width: 100%;
-    height: 6%;
+    height: auto;
 }
 
 .barra-busqueda input {
@@ -114,6 +123,7 @@ color: #0662fe;
     border-radius: 6px;
     width: 240px;
     background-color: #f6f6f6;
+    max-width: 100%;
 }
 
 .iconos-usuario {
@@ -153,7 +163,9 @@ color: #0662fe;
     right: -10px;
 }
 
-/* TÍTULO Y RUTA */
+/* =====================
+   TÍTULO Y RUTA
+   ===================== */
 .seccion-titulo-pagina {
     background: #f8f8f8;
     position: relative;
@@ -164,7 +176,7 @@ color: #0662fe;
 .alexa{
     position: absolute;
     right: 6.5%;
-    top:20%;
+    top: 20%;
 }
 
 .ruta-navegacion {
@@ -182,15 +194,19 @@ color: #0662fe;
     color: #292930;
 }
 
-/* DISPOSICIÓN PRINCIPAL */
+/* =====================
+   DISPOSICIÓN PRINCIPAL
+   ===================== */
 .disposicion-principal {
-   width: 100%;
+    width: 100%;
     padding: 2% 6.5%;
     display: flex;
     gap: 40px;
 }
 
-/* BARRA LATERAL (FILTROS) */
+/* =====================
+   BARRA LATERAL
+   ===================== */
 .barra-lateral {
     width: 250px;
     flex-shrink: 0;
@@ -273,9 +289,12 @@ color: #0662fe;
     cursor: pointer;
 }
 
-/* CUADRICULA DE PRODUCTOS */
+/* =====================
+   CUADRÍCULA DE PRODUCTOS
+   ===================== */
 .contenedor-productos {
     flex-grow: 1;
+    min-width: 0;
 }
 
 .cuadricula-productos {
@@ -367,15 +386,18 @@ color: #0662fe;
     cursor: pointer;
 }
 
-/* BOLETÍN DE NOTICIAS */
+/* =====================
+   BOLETÍN
+   ===================== */
 .seccion-boletin {
     position: relative;
     width: 87%;
-    height:100%;
+    height: 100%;
     margin: 0 6.5%;
     background-color: #BBC301;
     border-radius: 10px;
     padding: 4% 6.5%;
+    overflow: hidden;
 }
 
 .contenido-boletin {
@@ -403,6 +425,7 @@ color: #0662fe;
 .formulario-boletin {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .formulario-boletin input {
@@ -410,6 +433,7 @@ color: #0662fe;
     padding: 15px;
     border: none;
     border-radius: 6px;
+    min-width: 150px;
 }
 
 .formulario-boletin button {
@@ -423,9 +447,9 @@ color: #0662fe;
 }
 
 .fondo-formulario{
-position: absolute;
-top: 1px;
-right: 6.5%;
+    position: absolute;
+    top: 1%;
+    right: 6.5%;
 }
 
 .motivos-txt{
@@ -433,7 +457,9 @@ right: 6.5%;
     padding: 20px 0 0 0;
 }
 
-/* BLOQUES DE CONFIANZA */
+/* =====================
+   BLOQUES DE CONFIANZA
+   ===================== */
 .bloques-confianza {
     width: 100%;
     padding: 2% 6.5%;
@@ -473,7 +499,9 @@ right: 6.5%;
     color: #777;
 }
 
-/* PIE DE PÁGINA */
+/* =====================
+   PIE DE PÁGINA
+   ===================== */
 .pie-principal {
     width: 100%;
     padding: 2% 6.5%;
@@ -554,7 +582,6 @@ right: 6.5%;
     cursor: pointer;
 }
 
-/* INFERIOR DEL PIE */
 .inferior-pie {
     border-top: 1px solid #f0f0f0;
     padding-top: 20px;
@@ -563,6 +590,8 @@ right: 6.5%;
     align-items: center;
     font-size: 14px;
     color: #777;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .iconos-sociales {
@@ -585,9 +614,446 @@ right: 6.5%;
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .metodos-pago img {
     height: 22px;
     object-fit: contain;
+}
+
+
+/* ================================================
+   MEDIA QUERIES — RESPONSIVIDAD
+   ================================================ */
+
+/* ---------- LAPTOP / TABLET HORIZONTAL (992px – 1199px) ---------- */
+@media (max-width: 1199px) {
+    .seccion-titulo-pagina h1 {
+        font-size: 40px;
+    }
+
+    .seccion-titulo-pagina{
+        position: relative;
+    }
+
+    .alexa{
+        position: absolute;
+        top: 1%;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bloques-confianza {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .cuadricula-pie {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .barra-lateral {
+        width: 200px;
+    }
+
+    .contenido-boletin {
+        max-width: 60%;
+    }
+
+    .fondo-formulario {
+        right: 3%;
+    }
+}
+
+/* ---------- TABLET VERTICAL (768px – 991px) ---------- */
+@media (max-width: 991px) {
+    .nav-superior {
+        padding: 8px 4%;
+        flex-direction: column;
+        gap: 5px;
+        height: auto;
+    }
+
+    .encabezado-principal h1{
+        font-size: 32px;
+    }
+
+    .logotipo h1{
+        padding-top: 10%;
+        font-size: 20px;
+    }
+
+    .logo{
+        display: none !important;
+    }
+
+    .contenido-main {
+        padding: 15px 30px;
+    }
+
+    .contenedor-encabezado {
+        padding: 10px 15px;
+    }
+
+    .enlaces-navegacion a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .barra-busqueda input {
+        width: 180px;
+    }
+
+    .seccion-titulo-pagina {
+        padding: 4% 4%;
+    }
+
+    .seccion-titulo-pagina h1 {
+        font-size: 32px;
+    }
+
+    .alexa {
+        display: none;
+    }
+
+    .disposicion-principal {
+        padding: 2% 4%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .barra-lateral {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grupo-filtro {
+        margin-bottom: 0;
+        border-bottom: none;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .seccion-boletin {
+        width: 92%;
+        margin: 0 4%;
+        padding: 5% 5%;
+    }
+
+    .contenido-boletin {
+        max-width: 100%;
+    }
+
+    .fondo-formulario {
+        display: none;
+    }
+
+    .contenido-boletin h2 {
+        font-size: 26px;
+    }
+
+    .bloques-confianza {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3% 4%;
+    }
+
+    .cuadricula-pie {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .pie-principal {
+        padding: 3% 4%;
+    }
+}
+
+/* ---------- MÓVIL GRANDE (576px – 767px) ---------- */
+@media (max-width: 767px) {
+    .nav-superior {
+        padding: 6px 3%;
+    }
+
+    .encabezado-principal{
+        position: relative;
+    }
+
+   .logo{
+    display: none;
+
+    .logotipo h1 {
+        padding-left: 40px;
+        font-size: 0px;
+    }
+
+
+    .enlaces-navegacion {
+        display: none;
+    }
+
+    .barra-busqueda input {
+        width: 140px;
+        font-size: 13px;
+    }
+
+    .acciones-encabezado {
+        gap: 12px;
+    }
+
+    .contenido-main {
+        padding: 12px 15px;
+    }
+
+    .seccion-titulo-pagina h1 {
+        font-size: 26px;
+    }
+
+    .ruta-navegacion {
+        font-size: 12px;
+    }
+
+    .disposicion-principal {
+        padding: 3% 3%;
+        gap: 20px;
+    }
+
+    .barra-lateral {
+        grid-template-columns: 1fr;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .contenedor-imagen {
+        height: 170px;
+    }
+
+    .titulo-producto {
+        font-size: 13px;
+    }
+
+    .precio-producto {
+        font-size: 14px;
+    }
+
+    .tarjeta-producto {
+        padding: 12px;
+    }
+
+    .seccion-boletin {
+        width: 94%;
+        margin: 0 3%;
+        padding: 6% 5%;
+        border-radius: 8px;
+    }
+
+    .etiqueta-boletin {
+        font-size: 15px;
+    }
+
+    .contenido-boletin h2 {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .formulario-boletin {
+        flex-direction: column;
+    }
+
+    .formulario-boletin input {
+        width: 100%;
+    }
+
+    .formulario-boletin button {
+        padding: 14px 20px;
+        width: 100%;
+    }
+
+    .bloques-confianza {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 4% 3%;
+    }
+
+    .item-confianza h4 {
+        font-size: 13px;
+    }
+
+    .item-confianza p {
+        font-size: 11px;
+    }
+
+    .cuadricula-pie {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .pie-principal {
+        padding: 4% 3%;
+    }
+
+    .inferior-pie {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+/* ---------- MÓVIL PEQUEÑO (hasta 575px) ---------- */
+@media (max-width: 575px) {
+    .encabezado-principal {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+        gap: 5px;
+    }
+
+    #divisa,
+    #idioma {
+        padding: 5px;
+    }
+
+    .contenedor-encabezado {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    .encabezado-principal{
+        position: relative;
+    }
+
+    .logotipo h1 {
+        font-size: 0px;
+        padding-left: 35px;
+    }
+
+    .barra-busqueda {
+        width: 100%;
+        order: 3;
+    }
+
+    .barra-busqueda input {
+        width: 100%;
+    }
+
+    .acciones-encabezado {
+        gap: 10px;
+    }
+
+    .seccion-titulo-pagina {
+        padding: 5% 3%;
+    }
+
+    .seccion-titulo-pagina h1 {
+        font-size: 22px;
+    }
+
+    .disposicion-principal {
+        padding: 3% 3%;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contenedor-imagen {
+        height: 200px;
+    }
+
+    .tarjeta-producto {
+        padding: 15px;
+    }
+
+    .titulo-producto {
+        font-size: 14px;
+    }
+
+    .precio-producto {
+        font-size: 15px;
+    }
+
+    .seccion-boletin {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 8% 5%;
+    }
+
+    .contenido-boletin h2 {
+        font-size: 20px;
+    }
+
+    .bloques-confianza {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 5% 3%;
+    }
+
+    .cuadricula-pie {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .pie-principal {
+        padding: 5% 3%;
+    }
+
+    .cuadricula-pie {
+        margin-bottom: 30px;
+    }
+
+    .inferior-pie {
+        font-size: 12px;
+    }
+
+    .metodos-pago img {
+        height: 18px;
+    }
+
+    .boton-cargar-mas {
+        padding: 12px 25px;
+        width: 100%;
+    }
+}
+
+/* ---------- PANTALLAS MUY PEQUEÑAS (hasta 360px) ---------- */
+@media (max-width: 360px) {
+    .logotipo h1 {
+        font-size: 16px;
+    }
+
+    .seccion-titulo-pagina h1 {
+        font-size: 19px;
+    }
+
+    .cuadricula-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .acciones-encabezado {
+        gap: 8px;
+    }
+
+    .iconos-usuario {
+        gap: 10px;
+    }
+
+    .contenido-boletin h2 {
+        font-size: 18px;
+    }
 }
