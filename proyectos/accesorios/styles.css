@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,7 +7,7 @@
     color: black;
 }
 
-.cuerpo-completo{
+.cuerpo-completo {
     background-color: #ffffff;
     color: #292930;
 }
@@ -26,16 +26,16 @@
 }
 
 #divisa,
-#idioma{
+#idioma {
     padding: 10px;
 }
 
 #unete,
-#inicio-sesion{
+#inicio-sesion {
     padding-top: 30px;
 }
 
-.nav-superior{
+.nav-superior {
     padding: 1px 6.5%;
     display: flex;
     justify-content: space-between;
@@ -46,18 +46,18 @@
     gap: 5px;
 }
 
-.main-nav{
+.main-nav {
     height: auto;
     min-height: 70px;
     background-color: rgb(255, 255, 255);
 }
 
-.contenido-main{
+.contenido-main {
     padding: 20px 70px;
     justify-content: space-around;
 }
 
-.links-main{
+.links-main {
     padding: 1%;
 }
 
@@ -78,18 +78,18 @@
     font-weight: bold;
 }
 
-.logotipo h1{
+.logotipo h1 {
     padding-left: 35%;
     color: #0662fe;
 }
 
-.logo{
+.logo {
     position: absolute;
     left: 1%;
     top: 20%;
 }
 
-.enlaces-navegacion{
+.enlaces-navegacion {
     padding-top: 15px;
     flex-wrap: wrap;
     display: flex;
@@ -111,7 +111,11 @@
     flex-wrap: wrap;
 }
 
-.container-secuandario{
+.menu-checkbox{
+        display: none;
+    }
+
+.container-secuandario {
     position: relative;
     width: 100%;
     height: auto;
@@ -173,7 +177,7 @@
     padding: 3% 6.5%;
 }
 
-.alexa{
+.alexa {
     position: absolute;
     right: 6.5%;
     top: 20%;
@@ -446,13 +450,13 @@
     font-weight: bold;
 }
 
-.fondo-formulario{
+.fondo-formulario {
     position: absolute;
     top: 1%;
     right: 6.5%;
 }
 
-.motivos-txt{
+.motivos-txt {
     font-size: large;
     padding: 20px 0 0 0;
 }
@@ -633,13 +637,17 @@
         font-size: 40px;
     }
 
-    .seccion-titulo-pagina{
+    .seccion-titulo-pagina {
         position: relative;
     }
 
-    .alexa{
+    .alexa {
         position: absolute;
         top: 1%;
+    }
+
+    .menu-checkbox{
+        display: none;
     }
 
     .cuadricula-productos {
@@ -678,16 +686,16 @@
         height: auto;
     }
 
-    .encabezado-principal h1{
+    .encabezado-principal h1 {
         font-size: 32px;
     }
 
-    .logotipo h1{
+    .logotipo h1 {
         padding-top: 10%;
         font-size: 20px;
     }
 
-    .logo{
+    .logo {
         display: none !important;
     }
 
@@ -702,6 +710,10 @@
     .enlaces-navegacion a {
         margin: 0 8px;
         font-size: 14px;
+    }
+
+    .menu-checkbox{
+        display: none;
     }
 
     .barra-busqueda input {
@@ -785,275 +797,326 @@
         padding: 6px 3%;
     }
 
-    .encabezado-principal{
-        position: relative;
-    }
-
-   .logo{
-    display: none;
-
-    .logotipo h1 {
-        padding-left: 40px;
-        font-size: 0px;
-    }
-
-
-    .enlaces-navegacion {
-        display: none;
-    }
-
-    .barra-busqueda input {
-        width: 140px;
-        font-size: 13px;
-    }
-
-    .acciones-encabezado {
-        gap: 12px;
-    }
-
-    .contenido-main {
-        padding: 12px 15px;
-    }
-
-    .seccion-titulo-pagina h1 {
-        font-size: 26px;
-    }
-
-    .ruta-navegacion {
-        font-size: 12px;
-    }
-
-    .disposicion-principal {
-        padding: 3% 3%;
-        gap: 20px;
-    }
-
-    .barra-lateral {
-        grid-template-columns: 1fr;
-    }
-
-    .cuadricula-productos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .contenedor-imagen {
-        height: 170px;
-    }
-
-    .titulo-producto {
-        font-size: 13px;
-    }
-
-    .precio-producto {
-        font-size: 14px;
-    }
-
-    .tarjeta-producto {
-        padding: 12px;
-    }
-
-    .seccion-boletin {
-        width: 94%;
-        margin: 0 3%;
-        padding: 6% 5%;
-        border-radius: 8px;
-    }
-
-    .etiqueta-boletin {
-        font-size: 15px;
-    }
-
-    .contenido-boletin h2 {
-        font-size: 22px;
-        margin-bottom: 18px;
-    }
-
-    .formulario-boletin {
-        flex-direction: column;
-    }
-
-    .formulario-boletin input {
-        width: 100%;
-    }
-
-    .formulario-boletin button {
-        padding: 14px 20px;
-        width: 100%;
-    }
-
-    .bloques-confianza {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        padding: 4% 3%;
-    }
-
-    .item-confianza h4 {
-        font-size: 13px;
-    }
-
-    .item-confianza p {
-        font-size: 11px;
-    }
-
-    .cuadricula-pie {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .pie-principal {
-        padding: 4% 3%;
-    }
-
-    .inferior-pie {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-}
-
-/* ---------- MÓVIL PEQUEÑO (hasta 575px) ---------- */
-@media (max-width: 575px) {
     .encabezado-principal {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 12px;
-        gap: 5px;
-    }
-
-    #divisa,
-    #idioma {
-        padding: 5px;
-    }
-
-    .contenedor-encabezado {
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 8px 12px;
-    }
-
-    .encabezado-principal{
         position: relative;
     }
 
-    .logotipo h1 {
-        font-size: 0px;
-        padding-left: 35px;
+    .logo {
+        display: none;
+
+        .logotipo h1 {
+            padding-left: 40px;
+            font-size: 0px;
+        }
+
+
+        .enlaces-navegacion {
+            display: none;
+        }
+
+        .barra-busqueda input {
+            width: 140px;
+            font-size: 13px;
+        }
+
+        .acciones-encabezado {
+            gap: 12px;
+        }
+
+        .contenido-main {
+            padding: 12px 15px;
+        }
+
+        .seccion-titulo-pagina h1 {
+            font-size: 26px;
+        }
+
+        .ruta-navegacion {
+            font-size: 12px;
+        }
+
+        .disposicion-principal {
+            padding: 3% 3%;
+            gap: 20px;
+        }
+
+        .barra-lateral {
+            grid-template-columns: 1fr;
+        }
+
+        .cuadricula-productos {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .contenedor-imagen {
+            height: 170px;
+        }
+
+        .titulo-producto {
+            font-size: 13px;
+        }
+
+        .precio-producto {
+            font-size: 14px;
+        }
+
+        .tarjeta-producto {
+            padding: 12px;
+        }
+
+        .seccion-boletin {
+            width: 94%;
+            margin: 0 3%;
+            padding: 6% 5%;
+            border-radius: 8px;
+        }
+
+        .etiqueta-boletin {
+            font-size: 15px;
+        }
+
+        .contenido-boletin h2 {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .formulario-boletin {
+            flex-direction: column;
+        }
+
+        .formulario-boletin input {
+            width: 100%;
+        }
+
+        .formulario-boletin button {
+            padding: 14px 20px;
+            width: 100%;
+        }
+
+        .bloques-confianza {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 4% 3%;
+        }
+
+        .item-confianza h4 {
+            font-size: 13px;
+        }
+
+        .item-confianza p {
+            font-size: 11px;
+        }
+
+        .cuadricula-pie {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .pie-principal {
+            padding: 4% 3%;
+        }
+
+        .inferior-pie {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
     }
 
-    .barra-busqueda {
-        width: 100%;
-        order: 3;
-    }
+    /* ---------- MÓVIL PEQUEÑO (hasta 575px) ---------- */
+    @media (max-width: 575px) {
+        .encabezado-principal {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 8px 12px;
+            gap: 5px;
+        }
 
-    .barra-busqueda input {
-        width: 100%;
-    }
+        #divisa,
+        #idioma {
+            padding: 5px;
+        }
 
-    .acciones-encabezado {
-        gap: 10px;
-    }
+        .despl
 
-    .seccion-titulo-pagina {
-        padding: 5% 3%;
-    }
+        .contenedor-encabezado {
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 8px 12px;
+        }
 
-    .seccion-titulo-pagina h1 {
-        font-size: 22px;
-    }
+        .encabezado-principal {
+            position: relative;
+        }
 
-    .disposicion-principal {
-        padding: 3% 3%;
-    }
+        .acciones-encabezado {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
-    .cuadricula-productos {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .contenedor-imagen {
-        height: 200px;
-    }
-
-    .tarjeta-producto {
-        padding: 15px;
-    }
-
-    .titulo-producto {
-        font-size: 14px;
-    }
-
-    .precio-producto {
-        font-size: 15px;
-    }
-
-    .seccion-boletin {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        padding: 8% 5%;
-    }
-
-    .contenido-boletin h2 {
-        font-size: 20px;
-    }
-
-    .bloques-confianza {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 5% 3%;
-    }
-
-    .cuadricula-pie {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .pie-principal {
-        padding: 5% 3%;
-    }
-
-    .cuadricula-pie {
-        margin-bottom: 30px;
-    }
-
-    .inferior-pie {
-        font-size: 12px;
-    }
-
-    .metodos-pago img {
-        height: 18px;
-    }
-
-    .boton-cargar-mas {
-        padding: 12px 25px;
-        width: 100%;
-    }
+        /* Ocultar el checkbox real */
+.menu-checkbox {
+  display: none;
 }
 
-/* ---------- PANTALLAS MUY PEQUEÑAS (hasta 360px) ---------- */
-@media (max-width: 360px) {
-    .logotipo h1 {
-        font-size: 16px;
+/* Diseño básico del botón hamburguesa */
+.icono-hamburguesa {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.icono-hamburguesa span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #000000; /* Color de las rayas */
+  transition: all 0.3s ease;
+}
+
+.enlaces-navegacion {
+  display: none; 
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative; 
+  width: 100vw;
+}
+
+/* Estilos de tus enlaces (se mantienen igual) */
+.enlaces-navegacion a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-checkbox:checked ~ .enlaces-navegacion {
+  display: flex;
+}
+
+        .logotipo h1 {
+            font-size: 0px;
+            padding-left: 35px;
+        }
+
+        .barra-busqueda {
+            width: 100%;
+            order: 3;
+        }
+
+        .barra-busqueda input {
+            width: 100%;
+        }
+
+        .acciones-encabezado {
+            gap: 10px;
+        }
+
+        .seccion-titulo-pagina {
+            padding: 5% 3%;
+        }
+
+        .seccion-titulo-pagina h1 {
+            font-size: 22px;
+        }
+
+        .disposicion-principal {
+            padding: 3% 3%;
+        }
+
+        .cuadricula-productos {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .contenedor-imagen {
+            height: 200px;
+        }
+
+        .tarjeta-producto {
+            padding: 15px;
+        }
+
+        .titulo-producto {
+            font-size: 14px;
+        }
+
+        .precio-producto {
+            font-size: 15px;
+        }
+
+        .seccion-boletin {
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+            padding: 8% 5%;
+        }
+
+        .contenido-boletin h2 {
+            font-size: 20px;
+        }
+
+        .bloques-confianza {
+            grid-template-columns: 1fr;
+            gap: 18px;
+            padding: 5% 3%;
+        }
+
+        .cuadricula-pie {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .pie-principal {
+            padding: 5% 3%;
+        }
+
+        .cuadricula-pie {
+            margin-bottom: 30px;
+        }
+
+        .inferior-pie {
+            font-size: 12px;
+        }
+
+        .metodos-pago img {
+            height: 18px;
+        }
+
+        .boton-cargar-mas {
+            padding: 12px 25px;
+            width: 100%;
+        }
     }
 
-    .seccion-titulo-pagina h1 {
-        font-size: 19px;
-    }
+    /* ---------- PANTALLAS MUY PEQUEÑAS (hasta 360px) ---------- */
+    @media (max-width: 360px) {
+        .logotipo h1 {
+            font-size: 16px;
+        }
 
-    .cuadricula-productos {
-        grid-template-columns: 1fr;
-    }
+        .seccion-titulo-pagina h1 {
+            font-size: 19px;
+        }
 
-    .acciones-encabezado {
-        gap: 8px;
-    }
+        .cuadricula-productos {
+            grid-template-columns: 1fr;
+        }
 
-    .iconos-usuario {
-        gap: 10px;
-    }
+        .acciones-encabezado {
+            gap: 8px;
+        }
 
-    .contenido-boletin h2 {
-        font-size: 18px;
+        .iconos-usuario {
+            gap: 10px;
+        }
+
+        .contenido-boletin h2 {
+            font-size: 18px;
+        }
     }
 }
